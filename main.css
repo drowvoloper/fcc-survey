@@ -1,0 +1,164 @@
+body {
+  overflow-x:hidden;
+}
+
+#description {
+  display:inline;
+}
+
+fieldset {
+  background-image:linear-gradient();
+  border:10px solid #645244;
+  border-top:3px solid #645244;
+  border-left:3px solid #645244;
+  border-radius:20px;
+  margin:auto;
+  margin-top:50px;
+  margin-bottom:50px;
+  max-width:100%;
+  width:80%;
+}
+
+fieldset>div {
+  margin-bottom:1em;
+  margin-top:0.5em; 
+  max-width:100%;
+}
+
+.input-field {
+  text-align:center;
+  width:80%;
+}
+
+.input-field-2 {
+  height:35px;
+  text-align:center;
+}
+
+legend {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#795663;
+  height:25px;
+}
+
+.love {
+  font-style:italic;
+  color:#6c809a;
+}
+
+main {
+  margin:auto;
+  max-width:100%;
+}
+
+#submit {
+  width:100%;
+  height:100%;
+  background:#75bba7;
+  border-radius:5%;
+  font-size:1.2em;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+#submit:hover {
+  background:#7ae7c7;
+  cursor:pointer;
+}
+
+.submit-button {
+  margin:auto;
+  margin-top:20px;
+  width:200px;
+  height:70px;
+}
+
+#survey-form { 
+  margin-top:20px;
+  margin-bottom:120px;
+  width:100%;
+}
+
+
+textarea {
+  max-width:100%;
+  resize:none;
+  width:100%;
+}
+
+#title { 
+  text-align:center;
+}
+
+#transition-div {
+  text-align:center;
+}
+
+#transition-div>img {
+  height:2.5em;
+}
+
+ul {
+  list-style:none;
+}
+
+
+@media (max-width:600px) {
+  
+  div>label,.labels>p {
+    display:block;
+  }  
+}
+
+@media (min-width:600px) {
+  
+  .inputs {
+    display:inline-block;
+    text-align:left;
+    vertical-align:middle;
+    width:40%;
+   }
+  
+   .input-field {
+     width:100%;
+  }
+  
+  .labels {
+    display:inline-block;
+    text-align:right;
+    vertical-align:top;
+    width:40%;
+  }
+   
+  #name,#email,#number,#dropdown,#comments {
+    margin-left:10%;
+    }
+    
+  #transition-div {
+  width:120%;
+  text-align:left;
+  margin-top:20px;
+  animation-name: description;
+  animation-duration:15s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  overflow:hidden;
+  }
+
+@keyframes description {
+  0%{
+    margin-left:-20%;
+  }
+  100%{
+    margin-left:100%;
+  }
+  }
+
+
+
+  ul {
+    display:inline-block;
+  }
+}
+

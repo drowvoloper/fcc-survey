@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FCC Landing Page</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body>
+<main>
+    <h1 id="title">Does your hooman <span class="love">love</span> you?</h1>
+  <div id="transition-div">
+    <p id="description">Fill our survey and find out!</p>
+    <img alt="cat sleeping" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe8%2FSleeping_cat.svg%2F1024px-Sleeping_cat.svg.png&f=1">
+  </div>
+  <form id="survey-form" action="no.php">
+    <fieldset>
+      <legend>Prrsonal info</legend>
+      <div class="name">
+       <div class="labels">
+         <label for="name" id="name-label">Name: </label>
+       </div>
+       <div class="inputs">
+        <input type="text" id="name" placeholder="Enter your name" class="input-field" required>
+       </div>
+      </div>
+      <div>
+       <div class="labels">
+        <label for="email" id="email-label">Email: </label>
+       </div>
+       <div class="inputs">
+        <input type="email" id="email" placeholder="Enter your email" class="input-field" required>
+       </div>
+      </div>
+    </fieldset>
+    <fieldset>
+     <legend>About your hooman</legend>
+     <div>
+      <div class="labels">
+       <label for="number" id="number-label">How many hoomans do you own:</label>
+      </div>
+      <div class="inputs">
+       <input type="number" max="40" min="1" id="number" class="input-field-2" placeholder="nope" value="1">
+      </div>
+     </div>
+     <div>
+      <div class="labels">
+       <p>How many times you feed them:</p>
+      </div>
+      <div class="inputs">
+       <select id="dropdown" class="input-field-2">
+         <option value="">1 time/day</option>
+         <option value="">3 times/day</option>
+         <option value="">less than 7 times/week</option>
+         <option value="">I just let them hunt their own food</option>
+         <option value="">What? Hoomans need to be fed?</option>
+        </select>
+       </div>
+      </div>
+      <div>
+       <div class="labels">
+        <p>When you arrive, they...</p>
+       </div>
+       <div class="inputs">
+        <ul id="home">
+          <li>
+            <label for="happy">
+              <input type="radio" name="home" value="happy" id="happy"> 
+              Ask for cuddles
+            </label>
+          </li>
+          <li> 
+            <label for="run">
+              <input type="radio" name="home" value="run" id="run"> 
+              Run away
+            </label>
+          </li>
+          <li>
+            <label for="distrusting">
+              <input type="radio" name="home" value="distrusting" id="distrusting"> 
+              Look at you distrusting
+            </label>          
+          </li>
+        </ul>
+       </div>
+      </div>
+      <div>
+        <div class="labels">
+          <p>Does your hooman...?</p>
+        </div>
+        <div class="inputs">
+          <ul id="behaviour">
+            <li>
+              <label for="poop">
+                <input type="checkbox" name="behaviour" value="poop"> 
+                Poop
+              </label>
+            </li>
+            <li>
+              <label for="hipster">
+                <input type="checkbox" name="behaviour" value="hipster"> 
+                Have hipster style
+              </label>
+            </li>
+            <li>
+              <label for="anime">
+                <input type="checkbox" name="behaviour" value="anime">
+                Watch anime or play video games
+              </label>
+            </li>
+            <li>
+              <label for="get-along">
+                <input type="checkbox" name="behaviour" value="get-along">
+                Get along with other hoomans
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="labels">
+          <p>Additional information:</p>
+        </div>
+        <div class="inputs">
+          <textarea id="comments" rows="8" cols="20" placeholder=" My hooman is just stupid..."></textarea>
+        </div>
+      </div>
+    </fieldset>
+    <div class="submit-button">
+      <input type="submit" value="Submit" id="submit">
+    </div>
+  </form>
+</main>
+  </body>
+</html>
